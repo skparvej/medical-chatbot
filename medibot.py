@@ -43,7 +43,7 @@ def set_custom_prompt(custom_prompt_template):
 
 def load_llm():
     llm = ChatGroq(
-        model_name="meta-llama/llama-4-maverick-17b-128e-instruct",
+         model_name="llama-3.1-8b-instant",
         temperature=0.0,
         groq_api_key=os.environ["GROQ_API_KEY"],
     )
