@@ -28,7 +28,7 @@ def set_custom_prompt(custom_prompt_template):
 
 def load_llm():
     llm = ChatGroq(
-          model_name="llama-3.1-8b-instant",   
+          model="openai/gpt-oss-20b",   
         temperature=0.0,
         groq_api_key=os.environ["GROQ_API_KEY"],
     )
